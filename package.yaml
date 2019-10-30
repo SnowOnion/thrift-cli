@@ -21,6 +21,25 @@ description:         Please see the README on GitHub at <https://github.com/mut0
 
 dependencies:
 - base >= 4.7 && < 5
+- aeson
+- aeson-pretty
+- bytestring
+- filepath >= 1.4.2.1
+- hashable
+- language-thrift
+- megaparsec >=5.0 && <6.0
+- network
+# - thrift == 0.12.0 # 这 package 完全没进当前的 stackage snapshot
+# - language-thrift == 0.11.0.0 # 这 package 完全没进当前的 stackage snapshot
+- optparse-applicative >= 0.14.3.0
+- regex-pcre
+- text
+- thrift
+- unordered-containers
+- vector
+- scientific
+- split
+- megaparsec # 悍然从 stack.yaml 里 extra-deps 的 megaparsec-5.3.1 跳到不限版本（现最新版本 7.0.5）
 
 library:
   source-dirs: src
